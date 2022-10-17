@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		214CEE3C28FD4B2300814B9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE3B28FD4B2300814B9E /* main.cpp */; };
+		214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */; };
+		214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4728FD4C4C00814B9E /* classesSecondTask.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		214CEE3828FD4B2300814B9E /* labs_oop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = labs_oop; sourceTree = BUILT_PRODUCTS_DIR; };
 		214CEE3B28FD4B2300814B9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classesFirstTask.cpp; sourceTree = "<group>"; };
+		214CEE4328FD4BAE00814B9E /* classesFirstTask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classesFirstTask.hpp; sourceTree = "<group>"; };
+		214CEE4728FD4C4C00814B9E /* classesSecondTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classesSecondTask.cpp; sourceTree = "<group>"; };
+		214CEE4828FD4C4C00814B9E /* classesSecondTask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classesSecondTask.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,37 @@
 		214CEE3A28FD4B2300814B9E /* labs_oop */ = {
 			isa = PBXGroup;
 			children = (
-				214CEE3B28FD4B2300814B9E /* main.cpp */,
+				214CEE4528FD4BB500814B9E /* Source */,
 			);
 			path = labs_oop;
+			sourceTree = "<group>";
+		};
+		214CEE4528FD4BB500814B9E /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				214CEE3B28FD4B2300814B9E /* main.cpp */,
+				214CEE4628FD4BD200814B9E /* FirstTaskClasses */,
+				214CEE4A28FD4C6200814B9E /* SecondTaskClasses */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		214CEE4628FD4BD200814B9E /* FirstTaskClasses */ = {
+			isa = PBXGroup;
+			children = (
+				214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */,
+				214CEE4328FD4BAE00814B9E /* classesFirstTask.hpp */,
+			);
+			path = FirstTaskClasses;
+			sourceTree = "<group>";
+		};
+		214CEE4A28FD4C6200814B9E /* SecondTaskClasses */ = {
+			isa = PBXGroup;
+			children = (
+				214CEE4728FD4C4C00814B9E /* classesSecondTask.cpp */,
+				214CEE4828FD4C4C00814B9E /* classesSecondTask.hpp */,
+			);
+			path = SecondTaskClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +153,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */,
 				214CEE3C28FD4B2300814B9E /* main.cpp in Sources */,
+				214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
