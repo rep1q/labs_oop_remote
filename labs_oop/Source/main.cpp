@@ -114,49 +114,49 @@ void FirstTask(){
 
 
 void SecondTask(){
-//    std::cout<<"Введите сначала число х, затем е1 и затем е2: ";
-//        double x = GetValueDouble("Неверно введенное число, повторите попытку");
-//        double e1 = GetValueDouble("Неверно введенное число, повторите попытку");
-//        double e2 = GetValueDouble("Неверно введенное число, повторите попытку");
-//
-//        FuzzyNumber First(x,e1,e2);
-//        FuzzyNumber Second(First);
-//        FuzzyNumber Third = First + Second;
-//        Third = Third / First;
-//        First = Second*Third;
-//        Second = Third - First;
-//        Second = Third;
-//    FuzzyNumber Fourth;
-//    std::cout<<"Введите значение нового элемента\n";
-//    std::cin>>Fourth;
-//    std::cout<<Fourth;
-//    std::cout<<First;
-//    std::cout<<Second;
-//    std::cout<<Third;
-//    if (Fourth==Fourth) {
-//        std::cout<<"=";
-//    }
-//    else{
-//        std::cout<<"!=";
-//    }
-//    if (Fourth==Third) {
-//        std::cout<<"=";
-//    }
-//    else{
-//        std::cout<<"!=";
-//    }
-//    if (Fourth!=Fourth) {
-//        std::cout<<"!=";
-//    }
-//    else{
-//        std::cout<<"==";
-//    }
-//    if (Fourth!=Third) {
-//        std::cout<<"!=";
-//    }
-//    else{
-//        std::cout<<"==";
-//    }
+    std::cout<<"Введите сначала число х, затем е1 и затем е2: ";
+        double x = GetValueDouble("Неверно введенное число, повторите попытку");
+        double e1 = GetValueDouble("Неверно введенное число, повторите попытку");
+        double e2 = GetValueDouble("Неверно введенное число, повторите попытку");
+
+        FuzzyNumber First(x,e1,e2);
+        FuzzyNumber Second(First);
+        FuzzyNumber Third = First + Second;
+        Third = Third / First;
+        First = Second*Third;
+        Second = Third - First;
+        Second = Third;
+    FuzzyNumber Fourth;
+    std::cout<<"Введите значение нового элемента\n";
+    std::cin>>Fourth;
+    std::cout<<Fourth;
+    std::cout<<First;
+    std::cout<<Second;
+    std::cout<<Third;
+    if (Fourth==Fourth) {
+        std::cout<<"=";
+    }
+    else{
+        std::cout<<"!=";
+    }
+    if (Fourth==Third) {
+        std::cout<<"=";
+    }
+    else{
+        std::cout<<"!=";
+    }
+    if (Fourth!=Fourth) {
+        std::cout<<"!=";
+    }
+    else{
+        std::cout<<"==";
+    }
+    if (Fourth!=Third) {
+        std::cout<<"!=";
+    }
+    else{
+        std::cout<<"==";
+    }
 }
 
 
