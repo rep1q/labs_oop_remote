@@ -52,8 +52,8 @@ const FuzzyNumber FuzzyNumber::operator+(const FuzzyNumber& other) const{
 const FuzzyNumber FuzzyNumber::operator-(const FuzzyNumber& other) const{
     FuzzyNumber temp;
     *temp.x = *x - *other.x;
-    *temp.e1 = *e1 - *other.e1;
-    *temp.e2 = *e2 - *other.e2;
+    *temp.e1 = *e1 + *other.e1;
+    *temp.e2 = *e2 + *other.e2;
     return temp;
 }
 
