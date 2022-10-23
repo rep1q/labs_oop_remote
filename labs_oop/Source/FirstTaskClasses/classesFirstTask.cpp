@@ -5,8 +5,8 @@ Cursor::Cursor(){
     cX = 0;
     cY = 0;
     sz = 1;
-    vw = 0;
-    vb = 0;
+    vw = 1;
+    vb = 1;
 }
 
 
