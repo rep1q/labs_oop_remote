@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212FB494290C6FA0009157BF /* Pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB492290C6FA0009157BF /* Pair.cpp */; };
+		212FB498290C6FD9009157BF /* Rational.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB496290C6FD9009157BF /* Rational.cpp */; };
 		214CEE3C28FD4B2300814B9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE3B28FD4B2300814B9E /* main.cpp */; };
 		214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */; };
 		214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4728FD4C4C00814B9E /* classesSecondTask.cpp */; };
@@ -27,6 +29,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		212FB492290C6FA0009157BF /* Pair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pair.cpp; sourceTree = "<group>"; };
+		212FB493290C6FA0009157BF /* Pair.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pair.hpp; sourceTree = "<group>"; };
+		212FB496290C6FD9009157BF /* Rational.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rational.cpp; sourceTree = "<group>"; };
+		212FB497290C6FD9009157BF /* Rational.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rational.hpp; sourceTree = "<group>"; };
 		214CEE3828FD4B2300814B9E /* labs_oop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = labs_oop; sourceTree = BUILT_PRODUCTS_DIR; };
 		214CEE3B28FD4B2300814B9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classesFirstTask.cpp; sourceTree = "<group>"; };
@@ -50,6 +56,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		212FB495290C6FA5009157BF /* FourthTaskClasses */ = {
+			isa = PBXGroup;
+			children = (
+				212FB492290C6FA0009157BF /* Pair.cpp */,
+				212FB493290C6FA0009157BF /* Pair.hpp */,
+				212FB499290C6FDE009157BF /* Rational */,
+			);
+			path = FourthTaskClasses;
+			sourceTree = "<group>";
+		};
+		212FB499290C6FDE009157BF /* Rational */ = {
+			isa = PBXGroup;
+			children = (
+				212FB496290C6FD9009157BF /* Rational.cpp */,
+				212FB497290C6FD9009157BF /* Rational.hpp */,
+			);
+			path = Rational;
+			sourceTree = "<group>";
+		};
 		214CEE2F28FD4B2300814B9E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,7 @@
 				214CEE4628FD4BD200814B9E /* FirstTaskClasses */,
 				214CEE4A28FD4C6200814B9E /* SecondTaskClasses */,
 				214CEE6128FD74BE00814B9E /* ThirdTaskClasses */,
+				212FB495290C6FA5009157BF /* FourthTaskClasses */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -182,8 +208,10 @@
 				214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */,
 				214CEE6028FD74B800814B9E /* classesThirdTask.cpp in Sources */,
 				214CEE3C28FD4B2300814B9E /* main.cpp in Sources */,
+				212FB494290C6FA0009157BF /* Pair.cpp in Sources */,
 				214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */,
 				214CEE6428FF332700814B9E /* Fraction.cpp in Sources */,
+				212FB498290C6FD9009157BF /* Rational.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
