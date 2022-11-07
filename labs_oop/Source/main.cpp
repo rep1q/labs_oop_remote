@@ -5,6 +5,7 @@
 #include "ThirdTaskClasses/classesThirdTask.hpp"
 #include "FourthTaskClasses/Pair.hpp"
 #include "FourthTaskClasses/Rational/Rational.hpp"
+#include "FifthTaskClasses/NewPair.hpp"
 
 using namespace std;
 

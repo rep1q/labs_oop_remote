@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		212FB494290C6FA0009157BF /* Pair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB492290C6FA0009157BF /* Pair.cpp */; };
 		212FB498290C6FD9009157BF /* Rational.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB496290C6FD9009157BF /* Rational.cpp */; };
+		212FB4B2291978A9009157BF /* NewPair.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB4B0291978A9009157BF /* NewPair.cpp */; };
+		212FB4B9291978F7009157BF /* Fraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB4B7291978F7009157BF /* Fraction.cpp */; };
+		212FB4BE29197969009157BF /* FuzzyNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 212FB4BC29197969009157BF /* FuzzyNumber.cpp */; };
 		214CEE3C28FD4B2300814B9E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE3B28FD4B2300814B9E /* main.cpp */; };
 		214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */; };
 		214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4728FD4C4C00814B9E /* classesSecondTask.cpp */; };
@@ -33,6 +36,12 @@
 		212FB493290C6FA0009157BF /* Pair.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pair.hpp; sourceTree = "<group>"; };
 		212FB496290C6FD9009157BF /* Rational.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rational.cpp; sourceTree = "<group>"; };
 		212FB497290C6FD9009157BF /* Rational.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Rational.hpp; sourceTree = "<group>"; };
+		212FB4B0291978A9009157BF /* NewPair.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NewPair.cpp; sourceTree = "<group>"; };
+		212FB4B1291978A9009157BF /* NewPair.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = NewPair.hpp; sourceTree = "<group>"; };
+		212FB4B7291978F7009157BF /* Fraction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fraction.cpp; sourceTree = "<group>"; };
+		212FB4B8291978F7009157BF /* Fraction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fraction.hpp; sourceTree = "<group>"; };
+		212FB4BC29197969009157BF /* FuzzyNumber.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FuzzyNumber.cpp; sourceTree = "<group>"; };
+		212FB4BD29197969009157BF /* FuzzyNumber.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FuzzyNumber.hpp; sourceTree = "<group>"; };
 		214CEE3828FD4B2300814B9E /* labs_oop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = labs_oop; sourceTree = BUILT_PRODUCTS_DIR; };
 		214CEE3B28FD4B2300814B9E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		214CEE4228FD4BAE00814B9E /* classesFirstTask.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = classesFirstTask.cpp; sourceTree = "<group>"; };
@@ -75,6 +84,35 @@
 			path = Rational;
 			sourceTree = "<group>";
 		};
+		212FB4B3291978AE009157BF /* FifthTaskClasses */ = {
+			isa = PBXGroup;
+			children = (
+				212FB4B0291978A9009157BF /* NewPair.cpp */,
+				212FB4B1291978A9009157BF /* NewPair.hpp */,
+				212FB4BB2919790A009157BF /* FuzzyNumber */,
+				212FB4BA291978FC009157BF /* Fraction */,
+			);
+			path = FifthTaskClasses;
+			sourceTree = "<group>";
+		};
+		212FB4BA291978FC009157BF /* Fraction */ = {
+			isa = PBXGroup;
+			children = (
+				212FB4B7291978F7009157BF /* Fraction.cpp */,
+				212FB4B8291978F7009157BF /* Fraction.hpp */,
+			);
+			path = Fraction;
+			sourceTree = "<group>";
+		};
+		212FB4BB2919790A009157BF /* FuzzyNumber */ = {
+			isa = PBXGroup;
+			children = (
+				212FB4BC29197969009157BF /* FuzzyNumber.cpp */,
+				212FB4BD29197969009157BF /* FuzzyNumber.hpp */,
+			);
+			path = FuzzyNumber;
+			sourceTree = "<group>";
+		};
 		214CEE2F28FD4B2300814B9E = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +145,7 @@
 				214CEE4A28FD4C6200814B9E /* SecondTaskClasses */,
 				214CEE6128FD74BE00814B9E /* ThirdTaskClasses */,
 				212FB495290C6FA5009157BF /* FourthTaskClasses */,
+				212FB4B3291978AE009157BF /* FifthTaskClasses */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -207,11 +246,14 @@
 			files = (
 				214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */,
 				214CEE6028FD74B800814B9E /* classesThirdTask.cpp in Sources */,
+				212FB4B2291978A9009157BF /* NewPair.cpp in Sources */,
 				214CEE3C28FD4B2300814B9E /* main.cpp in Sources */,
 				212FB494290C6FA0009157BF /* Pair.cpp in Sources */,
 				214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */,
 				214CEE6428FF332700814B9E /* Fraction.cpp in Sources */,
+				212FB4BE29197969009157BF /* FuzzyNumber.cpp in Sources */,
 				212FB498290C6FD9009157BF /* Rational.cpp in Sources */,
+				212FB4B9291978F7009157BF /* Fraction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
