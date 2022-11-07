@@ -3,6 +3,8 @@
 #include "FirstTaskClasses/classesFirstTask.hpp"
 #include "SecondTaskClasses/classesSecondTask.hpp"
 #include "ThirdTaskClasses/classesThirdTask.hpp"
+#include "FourthTaskClasses/Pair.hpp"
+#include "FourthTaskClasses/Rational/Rational.hpp"
 
 using namespace std;
 
@@ -176,77 +178,97 @@ void ThirdTask(){
     std::string str;
     std::cout<<"Введите арифметичекское выражение: ";
     cin>>str;
-    std::string a="",b="",symb;
-    std::string a_fract="0",b_fract="0";
-    bool flag = false;
-    for (int i =0; i<str.length(); ++i) {
-        bool flag_fract_a = false, flag_fract_b = false;
-        if(str[i] == '+' || str[i] == '-' || str[i] == '*' || str[i] == '/' || flag == true){
-
-            if(str[i] == '+' || str[i] == '-' || str[i] == '*' || str[i] == '/')
-                symb = str[i];
-            if(flag == false)
-                flag = true;
-            if(str[i] == '.' || str[i] == ','){
-                b="";
-                flag_fract_b = true;
-            }
-            if (flag_fract_b == true) {
-                b_fract+=str[i];
-            }
-            else
-                if(str[i] != '+' && str[i] != '-' && str[i] != '*' && str[i] != '/')
-                    b+=str[i];
-        }
-        else{
-            if(str[i] == '.' || str[i] == ','){
-                flag_fract_a = true;
-                a = "";
-            }
-            if (flag_fract_a == true) {
-                a_fract+=str[i];
-            }
-            else
-                a+=str[i];
-        }
-
-    }
-    Fraction one(stoi(a),stoi(a_fract));
-    Fraction two(stoi(b),stoi(b_fract));
-    Calculator First(one,symb,two);
-    First.operations();
-    std::cout<<First;
-//    Fraction First(1,10);
-//    Fraction Second(2,10);
-//    First = Second;
-//    std::cout<<First;
+    Calculator First(str);
+    std::cout<<str<<" = "<<First<<"\n";
 }
 
+//void toPair(std::string str, Pair one, Rational F, Rational S){
+//    std::string first ="",second ="", first_fract="1",second_fract="1";
+//    bool flag_first = false, flag_second = false, flag = false;
+//    for (auto i : str) {
+//        if(flag ==  false){
+//            if(flag_first == true && flag == false)
+//                first_fract += i;
+//            if(i == '/'){
+//                flag_first = true;
+//                first_fract = "";
+//            }
+//            if(i == ' ' || i == ',')
+//                flag = true;
+//            if(flag_first == false && flag == false)
+//                first += i;
+//        }
+//        else{
+//            if(flag_first == true)
+//                second_fract += i;
+//            if(i == '/'){
+//                flag_second = true;
+//                second_fract = "";
+//            }
+//            if(flag_second == false)
+//                second += i;
+//        }
+//    }
+//    if(!flag_first && !flag_second)
+//        one(stoi(first),stoi(second));
+//    else{
+//        F(stoi(first),stoi(first_fract));
+//        S(stoi(second),stoi(second_fract));
+//    }
+//}
 
-
+void FourthTask(){
+    std::string str ="";
+    int a, b;
+    std::cout<<"\nВведите первую пару: ";
+    a = GetValueInt("Erorr");
+    b = GetValueInt("Erorr");
+    Pair First(a,b);
+    std::cout<<"\nВведите вторую пару: ";
+    a = GetValueInt("Erorr");
+    b = GetValueInt("Erorr");
+    Pair Second(a,b);
+    Pair res = First - Second;
+    std::cout<<"\n"<<res<<"\nВведите первую дробную пару: ";
+    Rational one(3,2);
+    Rational two(1,3);
+    std::cout<<"\nВведите вторую пару: ";
+    Rational three(1,2);
+    Rational four(2,3);
+    Pair* res_one = one * three;
+    Rational* p = (Rational*)res_one;
+    Pair* res_two = two * four;
+    Rational* p2 = (Rational*)res_two;//dynamic_cast
+    std::cout<<"\n( "<<*p<<", "<<*p2<<")\n";
+    
+}
 
 
 
 int main() {
-//    int num;
-//    cout<<"Введите номер задания:1,2,3: ";
-//    num = GetValueInt("Неверно введенное число, повторите попытку");
-//        switch (num) {
-//            case 1:
-//                FirstTask();
-//                break;
-//            case 2:
-//                SecondTask();
-//            case 3:
-//                ThirdTask();
-//            default:
-//                break;
-//        }
-//
-    ThirdTask();
-    
+    int num;
+    cout<<"Введите номер задания:1,2,3,4: ";
+    num = GetValueInt("Неверно введенное число, повторите попытку");
+        switch (num) {
+            case 1:
+                FirstTask();
+                break;
+            case 2:
+                SecondTask();
+                break;
+            case 3:
+                ThirdTask();
+                break;
+            case 4:
+                FourthTask();
+                break;
+            default:
+                break;
+        }
+
+
     return 0;
 }
 
 
-//лаптев: №44 стр 26
+//лаптев: №78 стр 67
