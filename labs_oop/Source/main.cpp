@@ -1,11 +1,13 @@
 #include <iostream>
 #include <locale>
-#include "FirstTaskClasses/classesFirstTask.hpp"
-#include "SecondTaskClasses/classesSecondTask.hpp"
-#include "ThirdTaskClasses/classesThirdTask.hpp"
-#include "FourthTaskClasses/Pair.hpp"
-#include "FourthTaskClasses/Rational/Rational.hpp"
-#include "FifthTaskClasses/NewPair.hpp"
+#include "classesFirstTask.hpp"
+#include "classesSecondTask.hpp"
+#include "classesThirdTask.hpp"
+#include "Pair.hpp"
+#include "Rational.hpp"
+#include "NewPair.hpp"
+#include "NewFraction.hpp"
+#include "NewFuzzyNumber.hpp"
 
 using namespace std;
 
@@ -183,40 +185,6 @@ void ThirdTask(){
     std::cout<<str<<" = "<<First<<"\n";
 }
 
-//void toPair(std::string str, Pair one, Rational F, Rational S){
-//    std::string first ="",second ="", first_fract="1",second_fract="1";
-//    bool flag_first = false, flag_second = false, flag = false;
-//    for (auto i : str) {
-//        if(flag ==  false){
-//            if(flag_first == true && flag == false)
-//                first_fract += i;
-//            if(i == '/'){
-//                flag_first = true;
-//                first_fract = "";
-//            }
-//            if(i == ' ' || i == ',')
-//                flag = true;
-//            if(flag_first == false && flag == false)
-//                first += i;
-//        }
-//        else{
-//            if(flag_first == true)
-//                second_fract += i;
-//            if(i == '/'){
-//                flag_second = true;
-//                second_fract = "";
-//            }
-//            if(flag_second == false)
-//                second += i;
-//        }
-//    }
-//    if(!flag_first && !flag_second)
-//        one(stoi(first),stoi(second));
-//    else{
-//        F(stoi(first),stoi(first_fract));
-//        S(stoi(second),stoi(second_fract));
-//    }
-//}
 
 void FourthTask(){
     std::string str ="";
@@ -244,7 +212,36 @@ void FourthTask(){
     
 }
 
+void FifthTask(){
+    NewPair* a = new NewFraction(2,5);
+    NewPair* b = new NewFraction(3,6);
+    NewPair* c = new NewFraction;
+    a->print();
+    b->print();
+    c->mul(a, b);
+    c->del(a, b);
+    c->summ(a, b);
+    NewPair* d = new NewFuzzyNumber(1,12,3);
+    NewFuzzyNumber x(1,10,2);
+    NewFuzzyNumber y(1,12,3);
+    NewPair* e = new NewFuzzyNumber(1,12,2);
+    NewPair* f = new NewFuzzyNumber;
+    d->print();
+    e->print();
+    f->summ(d, e);
+    f->mul(d, e);
+    f->del(d,e);
+    delete a;
+    delete b;
+    delete c;
+    delete d;
+    delete e;
+    delete f;
+}
 
+void SixTask(){
+    
+}
 
 int main() {
     int num;
@@ -263,13 +260,19 @@ int main() {
             case 4:
                 FourthTask();
                 break;
+            case 5:
+                FifthTask();
+                break;
+            case 6:
+                SixTask();
             default:
                 break;
         }
 
-
+    FifthTask();
     return 0;
 }
 
 
-//лаптев: №78 стр 67
+//5:лаптев: №78 стр 67
+//6: №16 стр 125
