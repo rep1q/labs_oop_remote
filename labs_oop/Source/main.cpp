@@ -221,10 +221,8 @@ void FifthTask(){
     c->mul(a, b);
     c->del(a, b);
     c->summ(a, b);
-    NewPair* d = new NewFuzzyNumber(1,12,3);
-    NewFuzzyNumber x(1,10,2);
-    NewFuzzyNumber y(1,12,3);
-    NewPair* e = new NewFuzzyNumber(1,12,2);
+    NewPair* d = new NewFuzzyNumber(11,12,14);
+    NewPair* e = new NewFuzzyNumber(9,10,12);
     NewPair* f = new NewFuzzyNumber;
     d->print();
     e->print();
@@ -244,30 +242,30 @@ void SixTask(){
 }
 
 int main() {
-    int num;
-    cout<<"Введите номер задания:1,2,3,4: ";
-    num = GetValueInt("Неверно введенное число, повторите попытку");
-        switch (num) {
-            case 1:
-                FirstTask();
-                break;
-            case 2:
-                SecondTask();
-                break;
-            case 3:
-                ThirdTask();
-                break;
-            case 4:
-                FourthTask();
-                break;
-            case 5:
-                FifthTask();
-                break;
-            case 6:
-                SixTask();
-            default:
-                break;
-        }
+//    int num;
+//    cout<<"Введите номер задания:1,2,3,4,5,6: ";
+//    num = GetValueInt("Неверно введенное число, повторите попытку");
+//        switch (num) {
+//            case 1:
+//                FirstTask();
+//                break;
+//            case 2:
+//                SecondTask();
+//                break;
+//            case 3:
+//                ThirdTask();
+//                break;
+//            case 4:
+//                FourthTask();
+//                break;
+//            case 5:
+//                FifthTask();
+//                break;
+//            case 6:
+//                SixTask();
+//            default:
+//                break;
+//        }
 
     FifthTask();
     return 0;
