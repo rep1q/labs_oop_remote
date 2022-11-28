@@ -6,17 +6,18 @@
 
 class NewFuzzyNumber:public NewPair{
 private:
-    int *x;
+    double *x;
 public:
     NewFuzzyNumber():NewPair(){
-        x = new int(0);
+        x = new double(0);
     }
-    NewFuzzyNumber(int _a, int _x, int _b):NewPair(_a,_b){
-        x = new int(_x);
+    NewFuzzyNumber(double _a, double _x, double _b):NewPair(_a,_b){
+        x = new double(_x);
     }
     void summ(NewPair* a, NewPair* b)override;
     void del(NewPair* a, NewPair* b)override;
     void mul(NewPair* a, NewPair* b)override;
+    void minus(NewPair* a, NewPair* b)override;
     void print()override;
     ~NewFuzzyNumber();
 };

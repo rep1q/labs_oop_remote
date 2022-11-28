@@ -17,6 +17,9 @@
 		214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE4728FD4C4C00814B9E /* classesSecondTask.cpp */; };
 		214CEE6028FD74B800814B9E /* classesThirdTask.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE5E28FD74B800814B9E /* classesThirdTask.cpp */; };
 		214CEE6428FF332700814B9E /* Fraction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 214CEE6228FF332700814B9E /* Fraction.cpp */; };
+		21FDD873292B64490088EC3D /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21FDD871292B64490088EC3D /* List.cpp */; };
+		21FDD877292B64960088EC3D /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21FDD875292B64960088EC3D /* Node.cpp */; };
+		21FDD87A292B64A40088EC3D /* Iterator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21FDD878292B64A40088EC3D /* Iterator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +55,12 @@
 		214CEE5F28FD74B800814B9E /* classesThirdTask.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = classesThirdTask.hpp; sourceTree = "<group>"; };
 		214CEE6228FF332700814B9E /* Fraction.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Fraction.cpp; sourceTree = "<group>"; };
 		214CEE6328FF332700814B9E /* Fraction.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Fraction.hpp; sourceTree = "<group>"; };
+		21FDD871292B64490088EC3D /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = List.cpp; sourceTree = "<group>"; };
+		21FDD872292B64490088EC3D /* List.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = List.hpp; sourceTree = "<group>"; };
+		21FDD875292B64960088EC3D /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Node.cpp; sourceTree = "<group>"; };
+		21FDD876292B64960088EC3D /* Node.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Node.hpp; sourceTree = "<group>"; };
+		21FDD878292B64A40088EC3D /* Iterator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Iterator.cpp; sourceTree = "<group>"; };
+		21FDD879292B64A40088EC3D /* Iterator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Iterator.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +155,7 @@
 				214CEE6128FD74BE00814B9E /* ThirdTaskClasses */,
 				212FB495290C6FA5009157BF /* FourthTaskClasses */,
 				212FB4B3291978AE009157BF /* FifthTaskClasses */,
+				21FDD874292B644E0088EC3D /* SixthTaskClasses */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -185,6 +195,19 @@
 				214CEE6328FF332700814B9E /* Fraction.hpp */,
 			);
 			path = Fraction;
+			sourceTree = "<group>";
+		};
+		21FDD874292B644E0088EC3D /* SixthTaskClasses */ = {
+			isa = PBXGroup;
+			children = (
+				21FDD871292B64490088EC3D /* List.cpp */,
+				21FDD872292B64490088EC3D /* List.hpp */,
+				21FDD875292B64960088EC3D /* Node.cpp */,
+				21FDD876292B64960088EC3D /* Node.hpp */,
+				21FDD878292B64A40088EC3D /* Iterator.cpp */,
+				21FDD879292B64A40088EC3D /* Iterator.hpp */,
+			);
+			path = SixthTaskClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,10 +270,13 @@
 				214CEE4428FD4BAE00814B9E /* classesFirstTask.cpp in Sources */,
 				214CEE6028FD74B800814B9E /* classesThirdTask.cpp in Sources */,
 				212FB4B2291978A9009157BF /* NewPair.cpp in Sources */,
+				21FDD877292B64960088EC3D /* Node.cpp in Sources */,
 				214CEE3C28FD4B2300814B9E /* main.cpp in Sources */,
 				212FB494290C6FA0009157BF /* Pair.cpp in Sources */,
 				214CEE4928FD4C4C00814B9E /* classesSecondTask.cpp in Sources */,
+				21FDD873292B64490088EC3D /* List.cpp in Sources */,
 				214CEE6428FF332700814B9E /* Fraction.cpp in Sources */,
+				21FDD87A292B64A40088EC3D /* Iterator.cpp in Sources */,
 				212FB4BE29197969009157BF /* NewFuzzyNumber.cpp in Sources */,
 				212FB498290C6FD9009157BF /* Rational.cpp in Sources */,
 				212FB4B9291978F7009157BF /* NewFraction.cpp in Sources */,

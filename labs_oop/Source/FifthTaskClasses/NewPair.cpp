@@ -1,22 +1,22 @@
 #include "NewPair.hpp"
 
 NewPair::NewPair(){
-    a = new int(0);
-    b = new int(0);
+    a = new double(0);
+    b = new double(0);
 }
 
-NewPair::NewPair(int _a, int _b){
-    a = new int;
-    b = new int;
+NewPair::NewPair(double _a, double _b){
+    a = new double;
+    b = new double;
     *a = _a;
     *b = _b;
 }
 
-int NewPair::GetA(){
+double NewPair::GetA(){
     return *a;
 }
 
-int NewPair::GetB(){
+double NewPair::GetB(){
     return *b;
 }
 
